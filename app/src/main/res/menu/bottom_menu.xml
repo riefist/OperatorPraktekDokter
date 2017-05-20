@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="Beranda"
+        />
+
+    <item
+        android:id="@+id/action_data"
+        android:enabled="true"
+        android:icon="@drawable/ic_assignment_white_24dp"
+        android:title="Pendaftar" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/accountprofile"
+        android:title="Profile" />
+
+
+</menu>

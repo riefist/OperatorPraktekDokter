@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.muhamadarief.operatorpraktek.ProfileFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btn_logout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layout_gambar"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/user"
+                    app:civ_border_color="@color/transparent_black"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/txt_nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Muhamad Arief"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="236dp"
+                android:layout_below="@+id/layout_gambar"
+                android:layout_margin="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="266dp">
+
+                    <LinearLayout
+                        android:id="@+id/layout_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Email "
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:hint="your email"
+                            android:padding="5dp"
+                            android:textSize="13sp"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/drop_shadow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_nohp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_email"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Nomor HP "
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/edt_nohp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:hint="your number"
+                            android:padding="5dp"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/drop_shadow" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_jeniskelamin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_nohp"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Jenis Kelamin"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/edt_jenis_kelamin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="@android:color/transparent"
+                            android:hint="jenis kelamin"
+                            android:padding="5dp"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/drop_shadow" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/roundedbackgroundubah"
+        android:text="Logout" />
+
+</RelativeLayout>
